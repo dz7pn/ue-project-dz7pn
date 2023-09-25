@@ -1,0 +1,21 @@
+body {
+    background-color: lightcyan;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+
+  h2 {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }

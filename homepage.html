@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Booking</title>
+
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Include Bootstrap Datepicker CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Custom CSS for styling -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Include Bootstrap and Bootstrap Datepicker JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Include Bootstrap Datepicker JavaScript -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+  <!-- Include your custom JavaScript from scripts.js -->
+  <script src="scripts.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>InfinityAuto Car Rental</h1>
+  </header>
+
+  <body><b>
+    Introducing InfinityAuto Car Rental, the premier choice for those who demand nothing less than an extraordinary driving experience. Nestled in the heart of the bustling metropolis of Metronova, our fleet of cutting-edge vehicles embodies the pinnacle of futuristic automotive engineering. Picture yourself behind the wheel of a QuantumX-2000, our flagship model, with its whisper-quiet Quantum Fusion Reactor and AI companion, QuantumDrive. Whether you're seeking a weekend getaway to the neon-lit beaches of Lumina Bay or an intercity voyage to the floating gardens of Skyhaven, InfinityAuto ensures your journey is as unforgettable as the destination itself. With our unparalleled safety features, such as the Instant Collision Avoidance System (ICAS) and the AeroShield Force Field, you can explore with peace of mind. At InfinityAuto, the road never ends, and the possibilities are infinite. Your adventure awaits – experience it with us today.
+  </body></b>
+
+  <main>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <section class="car-listing">
+      <article class="car">
+        
+        <h2>StellarDrive</h2>
+        <ul>
+          <li>Top Speed: 300 mph (483 km/h)</li>
+          <li>Acceleration: 0 to 60 mph in 2.5 seconds</li>
+          <li>Range: 600 miles (965 km) on a single charge</li>
+          <li>Power Source: Quantum Fusion Reactor</li>
+          <li>Autonomous Driving Level: Level 5 (Fully autonomous)</li>
+          <li>Hover Capability: 3 feet (0.9 meters) above ground</li>
+          <li>AI Assistant: QuantumDrive AI with Natural Language Interface</li>
+          <li>Safety Features: Instant Collision Avoidance System (ICAS)</li>
+          <li>Entertainment: Holo-Entertainment System with 3D Holographic Projection</li>
+        </ul>
+        <p>Daily Rate: ₣100000</p>
+        <!-- Add a button to trigger the datepicker -->
+        <button type="button" class="book-button" data-toggle="modal" data-target="#exampleModal">
+          Book Now
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Confirm
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="book-button"><a href="./success.html">Finalize</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Datepicker input for check-in -->
+        <input type="text" class="form-control datepicker" id="check-in-1" placeholder="Check-In Date">
+        <!-- Datepicker input for check-out -->
+        <input type="text" class="form-control datepicker" id="check-out-1" placeholder="Check-Out Date">
+        <br><br><br>
+        <img src="car1.jpg" alt="car 1" width="200" height="100">
+      </article>
+      <article class="car">
+
+        <h2>AeroBlade</h2>
+        <p>Location: City, Country</p>
+        <p>Daily Rate: ₣120000</p>
+        <!-- Add a button to trigger the datepicker -->
+        <button class="book-button" id="book-button-2">Book Now</button>
+        <!-- Datepicker input for check-in -->
+        <input type="text" class="form-control datepicker" id="check-in-2" placeholder="Check-In Date">
+        <!-- Datepicker input for check-out -->
+        <input type="text" class="form-control datepicker" id="check-out-2" placeholder="Check-Out Date">
+        <br><br><br>
+        <img src="car2.jpg" alt="car 2" width="200" height="100">
+      </article>
+      <!-- Add more car listings here -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Car Booking Website</p>
+  </footer>
+</body>
+
+</html>
