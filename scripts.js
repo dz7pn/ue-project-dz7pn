@@ -1,17 +1,18 @@
 $(document).ready(function () {
     $('.datepicker').datepicker({
-        format: 'yyyy/mm/dd', // Set your desired date format
+        format: 'yyyy/mm/dd',
         autoclose: false
     });
 
-    // Add event listeners to "Book Now" buttons for each hotel
-    $('#book-button-1').click(function () {
-        showDatePicker('check-in-1');
+    const cancelButton = document.getElementById('cancelButton');
+    const confirmationButton = document.getElementById('confirmationButton');
+    const bookButton = document.getElementById('bookButton');
+
+    cancelButton.addEventListener('click', function () {
+        bookButton.setAttribute('class', "btn btn-primary btn-sm disabled")
     });
 
-    $('#book-button-2').click(function () {
-        showDatePicker('check-in-2');
+    confirmationButton.addEventListener('click', function () {
+        bookButton.setAttribute('class', "btn btn-primary btn-sm")
     });
-
-    // Add more event listeners for additional hotels if needed
 });
