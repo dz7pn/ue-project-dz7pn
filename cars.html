@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Booking</title>
+
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Include Bootstrap Datepicker CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Custom CSS for styling -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Include Bootstrap and Bootstrap Datepicker JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Include Bootstrap Datepicker JavaScript -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+  <!-- Include your custom JavaScript from scripts.js -->
+  <script src="scripts.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>InfinityAuto Car Rental</h1>
+  </header>
+
+  <body><b>
+    <a href="">InfinityAuto Car Rental</a>, an establishment of paramount repute and distinction, emerges as the preeminent choice for those who, in the pursuit of mobility, harbor a fervent and unrelenting quest for an automotive experience that transcends the ordinary. Nestled conspicuously and strategically within the pulsating heart of the vibrant urban colossus known as Metronova, our distinguished and meticulously curated fleet of avant-garde vehicular contrivances serves as a veritable testament to the zenith of futuristic automotive ingenuity.
+    <br><br>
+    Envision, if you will, a scenario wherein you, the discerning patron, are granted the privilege of occupying the commanding seat of a <a href="">QuantumX-2000</a>, an automotive marvel unparalleled in its magnificence. The <a href="">QuantumX-2000</a>, the veritable jewel in our automotive crown, boasts the ethereal hum of the Quantum Fusion Reactor, a triumph of quantum mechanics harnessed to render locomotion supremely silent, and a sentient AI companion known as QuantumDrive, whose erudite assistance elevates your journey to a level hitherto unimagined.
+    <br><br>
+    Whether your predilections incline towards a resplendent sojourn amidst the neon-lit environs of the paradisiacal Lumina Bay or an ambitious and far-reaching expedition to the floating gardens of Skyhaven, InfinityAuto steadfastly guarantees that your voyage shall transcend the realms of the mundane and attain heights of singularity. Rest assured, dear traveler, that with the incorporation of our industry-leading safety protocols, such as the venerable Instant Collision Avoidance System (ICAS) and the formidable AeroShield Force Field, your peripatetic endeavors shall remain shrouded in the comforting mantle of security.
+    To begin your journey click <a href="./cars.html">here</a> to <b><a href=""><font color="yellow">Book Now</font></a></b>.
+    <br><br>
+    InfinityAuto invites you to embark upon a journey that remains unending, for in our world, the road stretches infinitely, and the horizon, ever beckoning, promises an ever-expanding realm of possibilities. Your adventure, in its most grandiloquent and boundless form, awaits you—experience it with us today.
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>CAR LISTINGS: RATES ARE CHARGED ON A 36 HOUR BASIS</h2>
+  </body></b>
+
+  
+  <main>
+    <section class="car-listing">
+      <article class="car">
+        
+        <h2>QuantumX-2000</h2>
+        <ul>
+          <li>Top Speed: 300 mph (483 km/h)</li>
+          <li>Acceleration: 0 to 60 mph in 2.5 seconds</li>
+          <li>Range: 600 miles (965 km) on a single charge</li>
+          <li>Power Source: Quantum Fusion Reactor</li>
+          <li>Autonomous Driving Level: Level 5 (Fully autonomous)</li>
+          <li>Hover Capability: 3 feet (0.9 meters) above ground</li>
+          <li>AI Assistant: QuantumDrive AI with Natural Language Interface</li>
+          <li>Safety Features: Instant Collision Avoidance System (ICAS)</li>
+          <li>Entertainment: Holo-Entertainment System with 3D Holographic Projection</li>
+        </ul>
+        <p>Rate: ₣1000000000</p>
+
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+          <b><font color="green">Select</font></b>
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Are you unsure?</h5>
+                <button type="button" data-dismiss="modal" aria-label="Yes">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                The Selected Dates will be used.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Yes</button>
+                <a href="./success.html"><button type="button" class="btn btn-secondary">No</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="text" class="form-control datepicker" id="check-in-1" placeholder="Check-In Date">
+        <input type="text" class="form-control datepicker" id="check-out-1" placeholder="Check-Out Date">
+        <br><br><br><br><br><br>
+        <img src="car1.jpg" alt="car 1" width="200" height="100">
+      </article>
+
+
+      <article class="car">
+
+        <h2>AeroGlide-3001</h2>
+        <ul>
+          <li>Top Speed: 280 mph (451 km/h)</li>
+          <li>Acceleration: 0 to 60 mph in 2.8 seconds</li>
+          <li>Range: 600 miles (965 km) on a single charge</li>
+          <li>Power Source: Advanced Aero-Plasma Battery</li>
+          <li>Autonomous Driving Level: Level 4 (Highly autonomous)</li>
+          <li>Hover Capability: 3 feet (0.9 meters) above ground</li>
+          <li>AI Assistant: QuantumDrive AI with Natural Language Interface</li>
+          <li>Safety Features: Instant Collision Avoidance System (ICAS)</li>
+          <li>Entertainment: Holo-Entertainment System with 3D Holographic Projection</li>
+        </ul>
+        <p>Rate: ₣12000000</p>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+          <b><font color="green">Select</font></b>
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Are you unsure?</h5>
+                <button type="button" data-dismiss="modal" aria-label="Yes">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                The Selected Dates will be used.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Yes</button>
+                <a href="./success.html"><button type="button" class="btn btn-secondary">No</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="text" class="form-control datepicker" id="check-in-1" placeholder="Check-In Date">
+        <input type="text" class="form-control datepicker" id="check-out-1" placeholder="Check-Out Date">
+        <br><br><br><br><br><br>
+        <img src="car2.jpg" alt="car 2" width="200" height="100">
+      </article>
+      
+      <article class="car">
+
+        <h2>ElectraWave-9000</h2>
+        <ul>
+          <li>Top Speed: 320 mph (515 km/h)</li>
+          <li>Acceleration: 0 to 60 mph in 2.3 seconds</li>
+          <li>Range: 800 miles (1,287 km) on a single charge</li>
+          <li>Power Source: ElectraWave Quantum Capacitor</li>
+          <li>Autonomous Driving Level: Level 5 (Fully autonomous)</li>
+          <li>Hover Capability: 3 feet (0.9 meters) above ground</li>
+          <li>AI Assistant: QuantumDrive AI with Natural Language Interface</li>
+          <li>Safety Features: Instant Collision Avoidance System (ICAS)</li>
+          <li>Entertainment: Holo-Entertainment System with 3D Holographic Projection</li>
+        </ul>
+
+        <p>Rate: ₣5200000</p>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+          <b><font color="green">Select</font></b>
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Are you unsure?</h5>
+                <button type="button" data-dismiss="modal" aria-label="Yes">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                The Selected Dates will be used.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Yes</button>
+                <a href="./success.html"><button type="button" class="btn btn-secondary">No</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="text" class="form-control datepicker" id="check-in-1" placeholder="Check-In Date">
+        <input type="text" class="form-control datepicker" id="check-out-1" placeholder="Check-Out Date">
+        <br><br><br>
+        <img src="car3.jpg" alt="car 3" width="200" height="100">
+      </article>
+
+
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2392 InfinityAuto Car Rental</p>
+  </footer>
+</body>
+
+</html>
