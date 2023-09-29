@@ -1,6 +1,6 @@
 body {
     background-image: url("space.jpg");
-    color: rgba(30, 121, 224, 0.821);
+    color: rgba(20, 127, 250, 0.821);
 }
 
 h1 {
@@ -16,6 +16,11 @@ p {
     color: red;
 }
 
+a:hover{
+    color:rgba(30, 121, 224, 0.821);
+    text-decoration: none;
+}
+
 h2 {
     color: blue;
     text-decoration: underline;
@@ -23,6 +28,10 @@ h2 {
 
 h3 {
     background-color: aliceblue;
+}
+
+h6 {
+    color:rgba(16, 127, 255, 0.853);
 }
 
 ul {
